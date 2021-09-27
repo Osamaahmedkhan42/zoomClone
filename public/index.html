@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socket.IO Chat Example</title>
+  <link rel="stylesheet" href="styleN.css">
+</head>
+<body>
+  <div class="pages">
+   
+    <div class="login page">
+      <div class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" id="inputName" />
+      </div>
+    </div>
+</div>
+
+  <script>
+      document.getElementById("inputName")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("inputName").click();
+        console.log('button working enter waala');
+        //
+        let name = document.getElementById("inputName").value;
+         document.cookie = name;
+        //
+        //console.log(name)
+        window.location.replace('/os')
+    }
+});
+  </script>
+</body>
+</html>

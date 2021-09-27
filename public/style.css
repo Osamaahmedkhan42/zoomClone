@@ -1,0 +1,132 @@
+#video-gridtest{
+    display:flex;
+    justify-content: center;
+    
+
+}
+#video-grid{
+    display:flex;
+    justify-content: center;
+
+  
+    flex-wrap: wrap;
+    background-color:black;
+   
+    align-items: center;
+    
+
+}
+
+video{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+body{
+    background-color: 	#F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    display: flex;
+}
+.main__left{
+   
+    flex: 0.8;
+    flex-direction: column;
+    display: flex;
+}
+.main__right{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #3D3D42;
+    background-color: #242324;
+}
+.main__header{
+    text-align: center;
+    color: #F5F5F5;
+}
+.main_chat_window{
+    flex-grow: 1;
+    overflow-y: auto;
+
+}
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages > li { padding: 0.5rem 1rem; }
+#messages > li:nth-child(odd) { background: #efefef; }
+.main_msg_container{
+    display: flex;
+    padding: 22px 12px;
+}
+.main_msg_container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #F5F5F5;
+
+}
+.main__videos{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.main__controls{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: #A9A9A9;
+}
+.main__controls__block{
+    display: flex;
+}
+.main__controls__button{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    min-width: 80px;
+}
+.main__controls__button i{
+    font-size: 24px;
+}
+.main__controls__button:hover{
+    background-color: #343434;
+    border-radius: 5px;
+}
+.leave_meeting{
+    color:#EB534B;
+
+}
+.unmute{
+    color: red;
+}
+.hide_chat{
+    display: none;
+}
+.test{
+    background-color: blue;
+}
+.msg_box{
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    
+    video{
+        height: 150px;
+        width: 200px;
+        object-fit: cover;
+    }
+  }

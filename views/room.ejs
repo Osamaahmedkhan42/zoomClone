@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link rel="stylesheet" href="style.css">
+    <script>      const ROOM_ID = "<%= roomID %>"</script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+
+
+
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/afdfb7fd1c.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    
+
+    <div class="main">
+        <div class="main__left" id="left_grid">
+            <div class="main__videos">
+                <div id="video-grid"> </div>
+            </div>
+            <div class="main__controls">
+                <div class="main__controls__block">
+                    <div class="main__controls__button main_mute_button" onclick="muteToggle();">
+                        <i class="fas fa-microphone"></i>
+                        <span>MUTE</span>
+                    </div>
+
+
+                    <div class="main__controls__button main_video_button " onclick="playStop();">
+                        <i class="fas fa-video"></i>
+                        <span>Stop Video</span>
+                    </div>
+                </div>
+                <!--asdasd-->
+                <div class="main__controls__block">
+                    <div class="main__controls__button">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security</span>
+                    </div>
+                    <div class="main__controls__button">
+                        <i class="fas fa-user-friends"></i>
+                        <span>Participants</span>
+                    </div>
+                    <div class="main__controls__button " onclick="chatToggle();" >
+                        <i class="fas fa-comment-alt"></i>
+                        <span>Chat</span>
+                    </div>
+                </div>
+                <div class="main__controls__block" onclick="disConnect();" >
+                    <div class="main__controls__button">
+                        <span class="leave_meeting">Leave Meeting</span>
+                    </div>
+                </div>
+                <!--asd-->
+            </div>
+        </div>
+   
+
+    <div class="main__right" id="chat_box">
+        <div class="main__header">
+            <h6 style="color: black;">CHAT</h6>
+        </div>
+        <div class="main_chat_window" id="main_chat">
+            <ul id="messages">
+            </ul>
+        </div>
+        <div class="main_msg_container">
+            <form action="" id="form">
+            <input type="text"  id="input" placeholder="type message here...">
+        </form>
+        </div>
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
