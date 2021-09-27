@@ -1,6 +1,10 @@
 //imports
 const express =require('express');
 const app = express();
+const cors = require('cors')
+app.use(cors({
+  origin:'https://drive.google.com'
+}))
 const http = require('http');
 //const server = require('http').Server(app) //make server to allow use with socket IO
 const server = http.createServer(app);
