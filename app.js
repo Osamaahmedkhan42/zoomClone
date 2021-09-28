@@ -21,7 +21,7 @@ app.use('/peerjs',peerserver)
 //routes
 app.get('/os',(req,res)=>{
   // res.redirect(`/${uuidV4()}`)
-   res.redirect('/XZVW')
+   res.redirect('/d144657b-3c30-465d-a8ff-1d4212d2b2d0')
 
 })
 app.get('/:room',(req,res)=>{
