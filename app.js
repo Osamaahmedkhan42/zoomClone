@@ -1,10 +1,6 @@
 //imports
 const express =require('express');
 const app = express();
-const cors = require('cors')
-app.use(cors({
-  origin:'https://drive.google.com'
-}))
 const http = require('http');
 //const server = require('http').Server(app) //make server to allow use with socket IO
 const server = http.createServer(app);
@@ -25,7 +21,7 @@ app.use('/peerjs',peerserver)
 //routes
 app.get('/os',(req,res)=>{
   // res.redirect(`/${uuidV4()}`)
-   res.redirect('/friends')
+   res.redirect('/XZVW')
 
 })
 app.get('/:room',(req,res)=>{
