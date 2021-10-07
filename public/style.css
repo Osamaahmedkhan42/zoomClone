@@ -42,7 +42,8 @@ body{
     display: flex;
     flex-direction: column;
     border-left: 1px solid #3D3D42;
-    background-color: #242324;
+    background-color: whitesmoke;
+
 }
 .main__header{
     text-align: center;
@@ -54,8 +55,8 @@ body{
 
 }
 #messages { list-style-type: none; margin: 0; padding: 0; }
-#messages > li { padding: 0.5rem 1rem; }
-#messages > li:nth-child(odd) { background: #efefef; }
+
+
 .main_msg_container{
     display: flex;
     padding: 22px 12px;
@@ -64,7 +65,8 @@ body{
     flex-grow: 1;
     background-color: transparent;
     border: none;
-    color: #F5F5F5;
+    color: black;
+    
 
 }
 .main__videos{
@@ -96,6 +98,9 @@ body{
 .main__controls__button i{
     font-size: 24px;
 }
+h4{
+    padding-right: 20px;
+}
 .main__controls__button:hover{
     background-color: #343434;
     border-radius: 5px;
@@ -113,13 +118,46 @@ body{
 .test{
     background-color: blue;
 }
-.msg_box{
+.msg_box_own{
     border: 2px solid #dedede;
-    background-color: #f1f1f1;
+    background-color: #e9eaf6;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0rem .2rem .2rem 0rem ;
+    margin:  0;
     color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 11rem;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+.msg_box_other{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0rem .2rem .2rem 0rem ;
+    margin:  0;
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 11rem;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+.li_own{
+    clear: both; float:right; display: block; padding-right: 10px;margin: 5px; 
+    
+}
+.li_other{
+    clear: both; float:left; display: block; padding-left: 10px;margin: 5px;
+}
+.hid_msg_text{
+    word-wrap: break-word;
+    max-width: 12rem;
+    
+}
+.hid_msg_box{
+    margin:6px
 }
 
 @media screen and (max-width: 700px) {

@@ -71,7 +71,7 @@ var form = document.getElementById('form');
   socket.on('chat message', function(msg,userName) {
     var item = document.createElement('li');
     
-    //test code
+    
     var h4 =document.createElement('h4')
     h4.innerHTML=userName;
     //div ok
@@ -79,13 +79,26 @@ var form = document.getElementById('form');
 
 
 div.style.color = "black";
-div.className = 'msg_box'
+//test code
+if(userName===document.cookie){
+  div.className = 'msg_box_own';
+  item.className='li_own'
+}
+else{
+  div.className = 'msg_box_other'
+  item.className='li_other'
+}
+//
+
 //div.innerHTML = msg;
 
 item.appendChild(div);
-div.appendChild(h4)
+div.appendChild(h4);
+h4.style.margin='6px';
 var p = document.createElement('p')
 p.innerHTML=msg;
+//p.style.margin=0;
+p.className='hid_msg_box';
 div.appendChild(p)
 //test code comp
     

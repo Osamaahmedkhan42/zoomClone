@@ -8,6 +8,7 @@ PROBLEMS Done
 # make the chat button work done
 # take user name as input done
 # scroll problem done
+# set messege window done
 
 PROBLEMS Remaining
 # close socket
@@ -15,3 +16,7 @@ PROBLEMS Remaining
 
 Improvements to do
 # create user count 
+# video element remove on user re-add or leave
+# make own screen like WA call
+
+
